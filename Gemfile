@@ -16,7 +16,7 @@ gem "bcrypt", "~> 3.1.7"
 gem "jwt", "~> 2.7"                    # JWT authentication
 gem "redis", "~> 5.0"                  # Redis for caching and sessions
 gem "sidekiq", "~> 7.2"                # Background job processing
-gem "elasticsearch-rails", "~> 7.2"    # Elasticsearch integration
+gem "elasticsearch-rails", "~> 8.0"    # Elasticsearch integration
 gem "disco", "~> 0.3"                  # AI recommendation engine
 gem "money-rails", "~> 1.15"           # Money and currency handling
 gem "state_machines-activerecord"      # State machines for orders
