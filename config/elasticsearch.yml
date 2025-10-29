@@ -1,0 +1,13 @@
+development:
+  host: localhost
+  port: 9200
+  index_prefix: ecommerce_dev
+  
+test:
+  host: localhost
+  port: 9200
+  index_prefix: ecommerce_test
+  
+production:
+  url: <%= ENV['ELASTICSEARCH_URL'] %>
+  index_prefix: ecommerce_prod
