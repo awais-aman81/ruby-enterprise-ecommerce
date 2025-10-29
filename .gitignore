@@ -35,16 +35,45 @@
 # Ignore application configuration
 /config/database.yml
 
+# Ruby Enterprise E-Commerce specific ignores
 # Ignore Docker volumes
 /postgres_data/
 /redis_data/
 /elasticsearch_data/
+
+# Ignore Redis dump files
+dump.rdb
+
+# Ignore Sidekiq logs
+/log/sidekiq.log
+
+# Ignore coverage reports
+/coverage/
+
+# Ignore test artifacts
+/spec/tmp/
+/spec/examples.txt
+
+# Ignore Elasticsearch data
+/elasticsearch/
+
+# Ignore compiled assets
+/public/assets/
+/public/packs/
+/public/packs-test/
+
+# Ignore node modules (if any)
+/node_modules/
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
 
 # Ignore IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
 # Ignore OS generated files
 .DS_Store
@@ -54,3 +83,24 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Ignore backup files
+*.bak
+*.backup
+*.orig
+
+# Ignore local configuration overrides
+/config/local_env.yml
+/config/application.local.yml
+
+# Ignore SSL certificates
+*.pem
+*.key
+*.crt
+
+# Ignore documentation builds
+/doc/app/
+/doc/api/
+
+# Ignore RubyMine files
+.idea/
