@@ -13,7 +13,7 @@ gem "puma", ">= 5.0"
 gem "bcrypt", "~> 3.1.7"
 
 # Enterprise E-commerce Gems
-gem "jwt", "~> 2.7"                    # JWT authentication
+gem "jwt", "~> 3.1"                    # JWT authentication
 gem "redis", "~> 5.0"                  # Redis for caching and sessions
 gem "sidekiq", "~> 7.2"                # Background job processing
 gem "elasticsearch-rails", "~> 7.2"    # Elasticsearch integration
