@@ -11,6 +11,13 @@ Rails.application.routes.draw do
       # Authentication routes
       post 'auth/login', to: 'auth#login'
       delete 'auth/logout', to: 'auth#logout'
+      
+      # Product catalog routes
+      resources :products do
+        collection do
+          get :search
+        end
+      end
     end
   end
 
